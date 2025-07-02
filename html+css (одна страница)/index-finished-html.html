@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Большая книга CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,700&subset=latin,Cyrillic" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+<!-- основной раздел -->
+<div class="section header">
+  <div class="container">
+  <div class="row">
+    <div class="three columns">
+      <p class="logo">Моя компания</p>
+    </div>
+    <div class="nav nine columns">
+      <a class="button button-primary" href="index-finished-html.html">Главная</a>
+      <a class="button" href="klienti.html">Клиенты</a>
+      <a class="button" href="onas.html">О нас</a>
+      <a class="button" href="vukunsii.html">Вакансии</a>
+    </div>
+  </div>
+  <div class="row action">
+    <h1>Пельмешки</h1>
+    <h2>Ммм</h2>
+				<h2><button id="openPopupBtn" onclick="openPopup()" class="button button-primary">Скушать</button> </h2>
+			  </div>
+</div>
+</div>			  
+			  <!-- Всплывающее окно -->
+			<div id="popup" class="popup">
+			<span class="close-button" onclick="closePopup()">×</span>
+			<img src="imgs/nium.jpg" style=" width:300px; height:300px;">
+</div>
+<!-- раздел контента -->
+
+
+<div class="section info">
+  <div class="container info">
+    <div class="row">
+      <h2>Graeco feugiat intellegam at vix</h2>
+    </div>
+	
+    <div class="row">
+      <div class="four columns">
+        <p style="width:270px; height:300px;">Пельмени - элементарное блюдо, гениальное в своей простоте. Вы же, грешным делом, не думали, что пельмени - эти маленькие пирожочки, сделанные из пресного теста с мясной начинкой и отваренные в крутом кипятке - made in China?.. Нет, конечно. Их родина - Коми-Пермяцкий округ, который находится на севере Пермского края.</p>
+        <p style="padding-left: 52px;"><a href="#" class="button button-primary">Дополнительно</a></p>
+      </div>
+      <div class="four columns">
+        <p> <img src="imgs/pelmeni1.jpg" width=295px height=300px style="border-radius:10px;" ></p>
+        <p style="padding-left: 52px;"><a href="#" class="button button-primary">Дополнительно</a></p>
+      </div>
+      <div class="four columns">
+        <p><img src="imgs/pamutnic.jpg" alt= width=295px height=300px style="border-radius:10px;" ></p>
+        <p style="padding-left: 52px;"><a href="#" class="button button-primary">Дополнительно</a></p>
+      </div>
+    </div>
+	
+		    <div class="row">
+      <div class="four columns">
+        <p><img src="imgs/pelmeni2.jpg" alt="пример" width=295px height=300px style="border-radius:10px;" ></p>
+        <p style="padding-left: 52px;"><a href="#" class="button button-primary">Дополнительно</a></p>
+      </div>
+      <div class="four columns">
+        <p style="width:270px; height:300px;">Почему именно в XVII веке появились пельмени? В те времена Россия прирастала сибирскими территориями, но поскольку земледелия изначально там не существовало, для русских землепроходцев было большой проблемой впрок запастись хлебом. Откуда его взять?</p>
+        <p style="padding-left: 52px;"><a href="#" class="button button-primary">Дополнительно</a></p>
+      </div>
+      <div class="four columns">
+        <p><img src="imgs/pamutnic2.jpg" alt="пример" width=295px height=300px style="border-radius:10px;"></p>
+        <p style="padding-left: 52px;"><a href="#" class="button button-primary">Дополнительно</a></p>
+      </div>
+    </div>
+	
+	
+	    <div class="row">
+      <div class="four columns">
+        <p><img src="imgs/pelmeni3.jpeg" alt="пример" width=295px height=300px style="border-radius:10px;"></p>
+        <p style="padding-left: 52px;"><a href="#" class="button button-primary">Дополнительно</a></p>
+      </div>
+      <div class="four columns">
+        <p><img src="imgs/pamutnic3.jpeg" alt="пример" width=295px height=300px style="border-radius:10px;"></p>
+        <p style="padding-left: 52px;"><a href="#" class="button button-primary">Дополнительно</a></p>
+      </div>
+      <div class="four columns">
+        <p style="width:270px; height:300px;">Название свое пельмени как раз получили потому, что имеют форму уха, в переводе с коми-пермяцкого «пэль» - это ухо, а «нянь» - хлеб.
+
+Слова эти имеются в словарях и других финно-угорских народов (к которым относятся и коми-пермяки), вроде как все они тоже имеют право претендовать на пельмени? В Удмуртии даже памятник им стоит.</p>
+        <p style="padding-left: 52px;"><a href="#" class="button button-primary">Дополнительно</a></p>
+      </div>
+    </div>
+	
+  </div>
+</div>
+<!-- колонтитул -->
+<div class="section footer">
+  <div class="container">
+    <div class="row">
+        <p>© Моя компания, 2015. Моя компания - это вымышленное название. Любое сходство с реальными компаниями случайно.</p>
+    </div>
+  </div>
+</div>
+
+			<!-- Полупрозрачный фон -->
+			<div id="popupOverlay" class="popup-overlay"></div>
+			
+			
+						<script>
+			// Получаем элементы DOM
+			const popup = document.getElementById('popup');
+			const popupOverlay = document.getElementById('popupOverlay');
+			const popupContentElement = document.getElementById('popupContent');
+			const userInputElement = document.getElementById('userInput');
+			const openPopupBtn = document.getElementById('openPopupBtn');
+
+			// Функции для открытия и закрытия всплывающего окна
+			function openPopup() {
+			popup.style.display = 'block';
+			popupOverlay.style.display = 'block';
+			// Можно добавить обработчик события на клавишу Esc для закрытия окна
+			document.addEventListener('keydown', closePopupOnEsc);
+			}
+
+			function closePopup() {
+			popup.style.display = 'none';
+			popupOverlay.style.display = 'none';
+			// Удаляем обработчик события
+			document.removeEventListener('keydown', closePopupOnEsc);
+			}
+
+			// Функция для обновления содержимого всплывающего окна
+			function updatePopupContent() {
+			const inputText = userInputElement.value;
+			popupContentElement.textContent = inputText;
+			userInputElement.value = ''; // Очищаем поле ввода
+			}
+
+			// Функция для закрытия окна по нажатию Esc
+			function closePopupOnEsc(event) {
+			if (event.key === 'Escape') {
+			closePopup();
+			}
+			}
+
+			// Добавляем интерактивность к кнопке открытия
+			openPopupBtn.addEventListener('click', () => {
+			openPopupBtn.classList.add('active-button'); // Добавляем класс при клике
+
+			// Убираем класс через некоторое время
+			setTimeout(() => {
+			openPopupBtn.classList.remove('active-button');
+			}, 1000); // 1 секунда
+			});
+
+			</script>
+</body>
+</html>
